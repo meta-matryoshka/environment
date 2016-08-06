@@ -19,6 +19,11 @@ RUN apt-get -y install nodejs=4.2.6~dfsg-1ubuntu4.1
 RUN apt-get -y install rbenv=0.4.0+debian1-3
 RUN apt-get -y install ruby-build=20151028-1
 RUN apt-get -y install emacs=46.1
+RUN apt-get -y install build-essential=12.1ubuntu2
+RUN apt-get -y install patch=2.7.5-1
+RUN apt-get -y install ruby-dev=1:2.3.0+1
+RUN apt-get -y install zlib1g-dev=1:1.2.8.dfsg-2ubuntu4
+RUN apt-get -y install liblzma-dev=5.1.1alpha+20120614-2ubuntu2
 
 #Change User
 RUN su $OS_USER_NAME
